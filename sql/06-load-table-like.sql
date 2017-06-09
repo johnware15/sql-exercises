@@ -1,10 +1,5 @@
-INSERT INTO student_like VALUES (1689, 1709);
-INSERT INTO student_like VALUES (1709, 1689);
-INSERT INTO student_like VALUES (1782, 1709);
-INSERT INTO student_like VALUES (1911, 1247);
-INSERT INTO student_like VALUES (1247, 1468);
-INSERT INTO student_like VALUES (1641, 1468);
-INSERT INTO student_like VALUES (1316, 1304);
-INSERT INTO student_like VALUES (1501, 1934);
-INSERT INTO student_like VALUES (1934, 1501);
-INSERT INTO student_like VALUES (1025, 1101);
+\c sql-exercises
+
+COPY likes
+FROM '/Users/johnware/Desktop/learners-guild/sql-exercises/data/likes.csv' DELIMITER ',' CSV HEADER;
+SELECT * FROM likes;

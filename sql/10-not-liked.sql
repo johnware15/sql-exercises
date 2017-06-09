@@ -3,6 +3,6 @@
 SELECT * FROM student
   JOIN student_like
   ON student.id = student_like.id1
-  AND ON student.id = student_like.id2
+  AND student.id = student_like.id2
   WHERE student_like IN (" ")
   GROUP BY name, grade;
